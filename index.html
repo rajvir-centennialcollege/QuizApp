@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Quiz Application!
+    </title>
+    <!--meta data holds the information of the page
+                
+                //specify yhe charset to determine what kind of the characters we will be using on this page say strings numbers so using charset utf which covers almost every set 
+                 //not closing as it an empty tag as DOCTYPE
+                //setting the viewpoint as per the width of the device
+            content of metatag specifies the dynamoc view-->
+
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=devide-width;initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <!--the visible elements of the html page will be written-->
+    <div id="quiz">
+        <!--id are used to reference the elements and can spearately design them unique and case sensitive-->
+        <!-- block level element actually a box that takes entire width of the page, inside this we ll create other elements-->
+        <header>
+            <h1>
+                <!--multiple heading tags are there1 to 6 with diff size and text font-->
+                QUIZ APPLICATION WITH TIMER!
+            </h1>
+        </header>
+        <div id="tracker">
+            <!--class nos will be used for same design for all the trackers for diff questions but unique id as we need diff tracker for a particular question but same clasa as they share the design -->
+            <div class="nos" id="first">1</div>
+            <div class="nos" id="second">2</div>
+            <div class="nos" id="third">3</div>
+            <div class="nos" id="four">4</div>
+            <div class="nos" id="five">5</div>
+            <div class="nos" id="six">6</div>
+            <div class="nos" id="seven">7</div>
+            <div class="nos" id="eight">8</div>
+            <div class="nos" id="nine">9</div>
+            <div class="nos" id="ten">10</div>
+        </div>
+        <hr style="margin-bottom: 20px">
+        <div id="quizSet">
+            <p id="question">
+                question
+                <!--html tag is empty as quesions will be based on the tracker-->
+            </p>
+            <div id="options" class="options">
+                <!--class options as there are 4 options with same design so best to implement a class with the properties-->
+                <button id="btn1" class="button"> <span id="option1">Question 4
+                        <!--as they wil be dynamic depending upon the question so instead of text selected span here-->
+                    </span></button>
+                <button id="btn2" class="button"> <span id="option2">Question 4
+                        <!--as they wil be dynamic depending upon the question so instead of text selected span here-->
+                    </span></button>
+                <button id="btn3" class="button"><span id="option3">Question 4
+                        <!--as they wil be dynamic depending upon the question so instead of text selected span here-->
+                    </span></button>
+                <button id="btn4" class="button"><span id="option4">Question 4
+                        <!--as they wil be dynamic depending upon the question so instead of text selected span here-->
+                    </span></button>
+
+            </div>
+            <button id="submit"> NEXT QUESTION</button>
+
+        </div>
+        <div id="resultBox">
+            <p id="result">
+                here the result will be posted
+
+            </p>
+            <button class="button" id="retake">
+                Retake Test
+            </button>
+
+        </div>
+        <hr style="margin-top: 20px">
+
+        <footer>
+            <p id="progress"> Question 1 of 10
+                <div id="timer"> Timer
+
+                </div>
+            </p>
+
+        </footer>
+    </div>
+    <!--loading data before the file which needs data-->
+    <script type="text/javascript" src="questions.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
